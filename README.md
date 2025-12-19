@@ -89,7 +89,10 @@ to check status ----minikube status
 ----------kubectl-----------
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 ---- update eks cluster ------
-aws eks update-kubeconfig --region us-east-1 --name veera
+
+aws eks update-kubeconfig --region us-east-1 --name anand
+
+
 chmod +x ./kubectl  -----Make the kubectl binary executable
 
 sudo mv ./kubectl /usr/local/bin/kubectl  ----sudo mv ./kubectl /usr/local/bin/kubectl
